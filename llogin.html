@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="llogin.css">
+  <title>HASH TECHIE OFFICIAL</title>
+</head>
+<body>
+    <section>
+        <div class="form-box 1" id="form_login">
+            <div class="form-value">
+                <form action="">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="" required id="name" placeholder="Username">
+                        
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" required id="pwd" placeholder="Password">
+                        
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  <a href="#">Forget Password</a></label>
+                      
+                    </div>
+                    <button onclick="login()">Log in</button>
+                    <div class="register">
+                      <p>Don't have a account <a id="change_form" onclick="change_form()"><span id="thongbao">Register</span></a></p>
+                      <a href="index.html" style="color: white; text-decoration: none;">Home</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form-box 1" id="form_register" style="height: 600px;">
+          <div class="form-value">
+              <form action="">
+                  <h2>Register</h2>
+                  <div class="inputbox">
+                    <ion-icon name="person-outline"></ion-icon>
+                    <input type="" required id="uname" placeholder="Username">
+                  </div>
+                  <div class="inputbox">
+                      <ion-icon name="mail-outline"></ion-icon>
+                      <input type="email" required id="email" placeholder="Email">
+                  </div>
+                  <div class="inputbox">
+                      <ion-icon name="lock-closed-outline"></ion-icon>
+                      <input type="password" required id="mk" placeholder="Password">
+                      
+                  </div>
+                  <div class="inputbox">
+                    <ion-icon name="lock-closed-outline"></ion-icon>
+                    <input type="password" required id="rmk" placeholder="Re-enter password">
+                    
+                  </div>
+                  <button onclick="check_Register()">Register</button>
+                  <div class="register">
+                    <a id="change_form" onclick="change_form1()"><span id="thongbao1">Login</span></a>
+                  </div>
+              </form>
+          </div>
+      </div>
+    </section>
+    <script>
+      function change_form() {
+          let register = document.getElementById("form_register");
+          let login = document.getElementById("form_login");
+          let tb = document.getElementsByClassName("thongbao");
+              login.style.display = "none";
+              register.style.display = "flex";
+      }
+      function change_form1() {
+          let register = document.getElementById("form_register");
+          let login = document.getElementById("form_login");
+          let tb1 = document.getElementsByClassName("thongbao1");
+              login.style.display = "flex";
+              register.style.display = "none";
+      }
+  </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
+    <script src="cart.js"></script>
+    <script src="function.js"></script>
+</body>
+</html>

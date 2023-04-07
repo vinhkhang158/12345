@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.sp1 {
+    width: 200px;
+}
+.form1 {
+    text-align:center;
+}
+.product-name {
+    text-align:center;
+}
+table {
+    margin: auto;
+
+}
+tbody {
+    text-align: center;
+
+}
+td {
+    border: solid black 1px;
+}
+.theader {
+    width: 200px;
+    
+}
+#form_register {
+    display:none;
+    height: 200px;
+}
+#form_login {
+    display:block;
+    height: 200px;
+}
+#change_form {
+
+    display:block;
+    width: 200px;
+    margin:auto;
+    text-align:center;
+    color:dodgerblue;
+    text-decoration:none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold;
+}
